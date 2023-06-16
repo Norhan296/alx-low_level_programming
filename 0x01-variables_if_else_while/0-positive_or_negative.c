@@ -5,7 +5,7 @@
  * main -Entry point
  * Description: 'check for number if it is positive or negative'
  * return: always 0
-**/
+ */
 /* betty style doc for function main goes there */
 int main(void)
 {
@@ -13,18 +13,18 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
 	if (n > 0)
 	{
-		printf("%d is positive \n", n);
+		printf("is positive%d\n", n);
 	}
 	else if (n == 0)
 	{
-		printf("%d is zero \n", n);
+		printf("is zero%d\n", n);
 	}
-	else 
+	else
 	{
-		printf("%d is negative \n", n);
+		printf("is negative%d\n", n);
 	}
+
 	return (0);
 }
