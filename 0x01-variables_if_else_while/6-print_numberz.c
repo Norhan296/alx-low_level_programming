@@ -12,6 +12,6 @@ int main(void)
 		(a <= 9) {
 			putchar(a + 48);
 		}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
