@@ -13,9 +13,11 @@ int main(void)
 		(c <= 'z') {
 			if (c == 'e' || c == 'q')
 			{
-				putchar(c);
 				c++;
+				continue;
 			}
+			putchar(c);
+			c++;
 		}
 	putchar('\n');
 	return (0);
