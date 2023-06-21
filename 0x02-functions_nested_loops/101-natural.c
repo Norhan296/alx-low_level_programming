@@ -7,12 +7,11 @@
 
 int main(void)
 {
-	int n ;
-	
+	int n;
 	for (n = 1; n < 1024; n++)
 	{
 		if (n % 3 == 0 || n % 5 == 0)
-			printf("%d, ",n);
+			printf("%d, ", n);
 	}
-        return (0);
+        return(0);
 }
