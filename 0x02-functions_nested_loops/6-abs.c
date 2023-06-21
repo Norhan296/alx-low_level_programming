@@ -3,6 +3,7 @@
 /**
  * _abs - function that compute the absolute value of an integer
  *
+ * it takes n as input and the output from function
  * Return: Always 0 (success)
  *
  */
