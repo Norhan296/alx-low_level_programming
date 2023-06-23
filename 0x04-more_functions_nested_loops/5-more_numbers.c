@@ -11,8 +11,8 @@ void more_numbers(void)
 	int n, num, count;
 
 	for (n = 0; n <= 9; n++)
-		count = 0;
-		while (count >= 0; count <= 14)
+	{
+		while (count = 0; count <= 14)
 		{
 			num = count;
 			if (count > 9)
@@ -23,4 +23,5 @@ void more_numbers(void)
 			_putchar(num + 48);
 		}
 		_putchar('\n');
+	}
 }
