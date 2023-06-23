@@ -18,6 +18,7 @@ void print_most_numbers(void)
 			continue
 		else
 			_putchar(n + 48);
+		n++;
 	}
 	_putchar('\n');
 }
