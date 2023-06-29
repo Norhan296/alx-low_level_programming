@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _strncat - concatenate two strings
@@ -13,6 +13,7 @@ char *_strncat(char *dest, char *src, int n)
 	int c, i;
 
 	c = 0;
+
 	while (dest[c])
 		c++;
 
