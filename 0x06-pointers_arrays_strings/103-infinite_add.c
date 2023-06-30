@@ -15,8 +15,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 
 	while (n1[i] != '\0')
 		i++;
-	while (n2[i] != '\0')
-		i++;
+	while (n2[j] != '\0')
+		j++;
 	if (i > j)
 		l = i;
 	else
@@ -25,7 +25,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		return (0);
 	r[l] = '\0';
 
-	for (k = l - 1; k >= 0; k++)
+	for (k = l - 1; k >= 0; k--)
 	{
 		i--;
 		j--;	
