@@ -30,7 +30,7 @@ int isDelimiter(char c)
 }
 
 /**
- ** cap_string - capitalize words 
+ * cap_string - capitalize words 
  * @s: input string
  * Return: string with capital
  */
@@ -41,12 +41,12 @@ char *cap_string(char *s)
 
 	while (*s)
 	{
-		if (isDelimiter[*s])
+		if (isDelimiter(*s))
 			foundDelimit = 1;
 		else if (isLower(*s) && foundDelimit)
 		{
 
-			*s -= 12;
+			*s -= 32;
 			foundDelimit = 0;
 		}
 		else
