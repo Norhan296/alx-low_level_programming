@@ -2,12 +2,11 @@
 #include <stdio.h>
 
 /**
- * is_prime_number - return 1 if it is prime else return 0
- * check_prime - checjs all numbers < n if they can divide it 
+ * is_prime_number - return 1 if it is prime else return 0 
  *
  * @othrn: int
  * @n: integer input
- * Return: 1 if number is prime 
+ *Return: 1 if number is prime 
  * else return 0
  */
 
@@ -17,6 +16,9 @@ int is_prime_number(int n)
 	return (check_prime(n, 2));
 }
 
+/**
+ * check_prime - checks all numbers < n if they can divide it
+ */
 int check_prime(int n, int othrn)
 {
 	if (othrn >= n && n > 2)
