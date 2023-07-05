@@ -1,13 +1,15 @@
 #include "main.h"
 
 /**
- * is_palindrome - checks if string is palindrome or not
+ * last_index - returns the last index of a string counting the null character
  * @s: the string
- * Return: 1 if is palindrome and if not
+ * Return: int
  */
 
 
 
+int is_palindrome(char *s);
+int check(char *s, int start, int end, int mod);
 int last_index(char *s)
 {
 	int n = 0;
@@ -19,18 +21,10 @@ int last_index(char *s)
 
 
 /**
- * check - checks if the string is palindrome or not
+ * is_palindrome - checks if a string is a palindrome
  * @s: the string
- * @start: the start of string
- * @end: the end of the string
- * @mod: the mod over len
- * Return: nothing
+ * Return: 0 or 1
  */
-
-
-
-
-
 
 int is_palindrome(char *s)
 {
@@ -38,7 +32,14 @@ int is_palindrome(char *s)
 
 	return (check(s, 0, end - 1, end % 2));
 }
-
+/**
+ * check - checks for the palindrome
+ * @s: string
+ * @mod: int
+ * @start: int moves from right to left
+ * @end: int moves from left to right
+ * Return: 0 or 1
+ */
 
 int check(char *s, int start, int end, int mod)
 {
